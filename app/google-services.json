@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "608093335804",
+    "firebase_url": "https://projectwork-2296b.firebaseio.com",
+    "project_id": "projectwork-2296b",
+    "storage_bucket": "projectwork-2296b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608093335804:android:1132fcd38027ab99",
+        "android_client_info": {
+          "package_name": "ankur.projectwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "608093335804-0mhgolhkjjepghuidt46e9vmh0re49se.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ankur.projectwork",
+            "certificate_hash": "6e73bfc410237abb6dbcd00f4b164a2f6579d0f3"
+          }
+        },
+        {
+          "client_id": "608093335804-bb8s9m6fs2fv8n1v4c929e29joukcrcb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtJkDX4eG-xory1iSgiq7GUVUq_SdmtfM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "608093335804-bb8s9m6fs2fv8n1v4c929e29joukcrcb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

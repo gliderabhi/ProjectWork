@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hdback"
+    tools:context="ankur.projectwork.TagLocation">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpinnerView"
+        android:layout_below="@+id/ORTEXT">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SpinnerText"
+            android:text="Please select nearest city to the site of investigation manually"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            />
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/LocationSelector"
+            android:layout_below="@+id/SpinnerText"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"></Spinner>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to tests"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/ProceedBtn"
+            android:textColor="#ffF"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btncustom"
+            android:layout_below="@+id/Magnitude"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/MagnitudeEarthquake"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Earthquake Magnitude"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textAllCaps="true"
+            android:layout_below="@+id/LocationSelector"
+
+            />
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Magnitude"
+            android:hint="Magnitude "
+            android:textColorHint="#fff"
+            android:layout_below="@+id/MagnitudeEarthquake"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeDetails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"
+            android:src="@drawable/maps"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/FakeMAp"
+            android:onClick="getLocation"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#fff"
+        android:layout_below="@+id/fab"
+        android:id="@+id/ORTEXT"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:background="@drawable/btncustom"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:layout_below="@+id/FakeMAp"
+        android:text="Click to get current location "/>
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

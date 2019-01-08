@@ -1,0 +1,30 @@
+<resources>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">174620306815954</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb174620306815954</string>
+
+    <string name="app_name">LiqCal</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="depth">Depth</string>
+    <string name="supuDetails">"<br>Dr.  Supriya  Mohanty </br>
+        <br></br><br></br><br>Assistant  Professor</br><br></br>
+<br>Department  of  Civil  Engineering</br>
+        <br>IIT  BHU  Varanasi.</br>"</string>
+
+    <string name="AnkurDetails">"<br>Ankur  Prasad</br> <br></br><br>IDD  PART  4</br><br></br>
+        <br>Department  of  Civil  Engineering</br><br></br>
+        <br>IIT  BHU  Varanasi.</br>"</string>
+    <string name="waterDepth">waterDepth</string>
+
+    <string name="CRR">CRR</string>
+
+    <string name="CSR">CSR</string>
+
+    <string name="Liq">Liquifaction</string>
+    <string name="FS">FS</string>
+    <string name="soilType">Soil Type</string>
+    <string name="N160CS">N160CS</string>
+    <string name="Fric">Sleeve Friction</string>
+    <string name="Tip">Tip</string>
+</resources>

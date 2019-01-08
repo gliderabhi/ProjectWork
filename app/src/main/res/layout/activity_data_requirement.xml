@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hdback"
+    tools:context="ankur.projectwork.DataRequirement">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="10dp"
+     android:text="Data for SPT Test"
+     android:textSize="20dp"
+     android:textColor="#fff"
+     android:textAllCaps="true"
+     android:id="@+id/CPTTEStId"
+     />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data"
+                android:layout_below="@+id/CPTTEStId"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText"
+                    android:textColor="#fff"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Depth of test"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/Data_Entry"
+                    android:layout_toRightOf="@+id/DataText"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/depthCPT"
+                        android:hint="Enter the depth of test in m "
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data1"
+                android:layout_below="@+id/data"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText1"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Spt value"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText1"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Spt Value standard instrument"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SptValue"
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grain size distribution Data "
+                android:layout_below="@+id/data1"
+                android:layout_margin="20dp"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:id="@+id/GrainSizeHead"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data2"
+                android:layout_below="@+id/GrainSizeHead"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText2"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Gravel"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry2"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText2"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Gravel % "
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/GravelDistribution"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data3"
+                android:layout_below="@+id/data2"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText3"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Sand"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry3"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText3"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Sand % "
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SandDistribution"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data4"
+                android:layout_below="@+id/data3"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText4"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Silt"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry4"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText4"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Silt % "
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SiltDistribution"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data5"
+                android:layout_below="@+id/data4"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText5"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Clay"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry5"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText5"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Clay % "
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ClayDistribution"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data10"
+                android:layout_below="@+id/data5"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText10"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Soil type"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry10"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText10"
+                    >
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SoilDr">
+
+                    </Spinner>
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Soil Properties"
+                android:textSize="20dp"
+                android:textColor="#fff"
+                android:layout_below="@+id/data10"
+                android:textAllCaps="true"
+                android:id="@+id/SoilProps"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data6"
+                android:layout_below="@+id/SoilProps"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText6"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Unit Weight"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry6"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText6"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Unit Weight in kN"
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/unitWtvalue"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/AdditionalText"
+                android:layout_below="@+id/data6"
+                android:text="Additional Data"
+                android:textColor="#fff"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/data9"
+                android:layout_below="@+id/AdditionalText"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataText9"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:text="Water Table depth"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_margin="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DataEntry9"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/DataText9"
+                    >
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:hint="Depth of water table in m "
+                        android:textColor="#fff"
+                        android:textColorHint="#fff"
+                        android:inputType="numberDecimal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/WaterTableValue"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+             </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MoreDataText"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/data9"
+                android:layout_marginLeft="10dp"
+                android:text="Do you want to enter more data at different depths??? "
+                android:textSize="18dp"
+                android:textColor="#fff"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/MoreDataText"
+                android:id="@+id/ConfirmMoreData"
+                android:background="@drawable/btncustom"
+                android:padding="10dp"
+                android:layout_marginLeft="35dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Results"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/MoreDataText"
+                android:layout_toRightOf="@+id/ConfirmMoreData"
+                android:id="@+id/NoData"
+                android:background="@drawable/btncustom"
+                android:padding="10dp"
+
+                android:layout_marginLeft="40dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
